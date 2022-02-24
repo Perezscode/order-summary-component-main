@@ -1,0 +1,220 @@
+/** Root **/
+
+:root {
+  /** Primary **/
+
+--Pale-blue: hsl(225, 100%, 94%); /** suscription bk **/
+--Bright-blue: hsl(245, 75%, 52%); /** button **/
+
+  /** Neutral **/
+
+--Very-pale-blue: hsl(225, 100%, 98%); /** main bk **/
+--Desaturated-blue: hsl(224, 23%, 55%);/** p font **/
+--Dark-blue: hsl(223, 47%, 23%); /** a change **/
+
+/** Fonts **/
+--font: 'red hat display', 'sans-serif';
+}
+
+/** Box-sizing **/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/** Globales **/
+
+body {
+  font-family: var(--font);
+  background: var(--Pale-blue);
+  background-image: url(/images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  min-height: 100vh;
+}
+
+.contenedor {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  overflow: hidden;
+  max-width: 26rem;
+  border-radius: 1.5rem;
+  box-shadow: 10px 20px 40px 20px rgba(0, 0, 0, 0.1);
+  padding-bottom: 2rem;
+
+}
+
+.hero {
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  width: 100%;
+  overflow: hidden;
+}
+.card__body {
+  text-align: center;
+}
+
+.heading {
+  color: var(--Dark-blue);
+  font-weight: 700;
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.text {
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: 0 2.1rem 1.4rem 2.1rem;
+}
+
+.subscription-box {
+  background-color: var(--Very-pale-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 3em 2em 3em;
+  padding: 1.5em;
+  gap: 2rem;
+  border-radius: 13px;
+}
+
+
+
+.subcription-box-right {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+  opacity: 1;
+  transition: all .2 ease;
+  justify-content: left;
+}
+
+
+
+.subscription-box-left {
+  display: flex;
+}
+
+.anual-plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+  text-align: left;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 1rem;
+  margin: 0;
+  padding-bottom: 0.4rem;
+}
+
+.price {
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.buttons {
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+button {
+  all: unset;
+  display: block;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: .95rem;
+  font-weight: 700;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding: 1rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.button:focus {
+  /* Provide a fallback style for browsers
+     that don't support :focus-visible */
+  outline: 3px dashed var(--Desaturated-blue);
+}
+
+.button:focus:not(:focus-visible) {
+  /* Remove the focus indicator on mouse-focus for browsers
+     that do support :focus-visible */
+  outline: none;
+}
+
+.button:focus-visible {
+  /* for browsers that do support :focus-visible */
+  outline: 3px dashed var(--Desaturated-blue);
+}
+
+
+.payment-button {
+  background: var(--Bright-blue);
+  color: white;
+  box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
+  opacity: 1;
+  transition: all .2s ease;
+
+}
+
+.payment-button:hover {
+  opacity: .8;
+}
+
+.cancel-button {
+  color: var(--Desaturated-blue);
+  transition: color .2s ease;
+}
+
+.cancel-button:hover {
+  color: var(--Dark-blue);
+}
+
+
+h2 {
+  margin: 0;
+} 
+
+
+
+
+/** Footer **/
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+/** Attributes **/
+
+.attribution { 
+  font-size: 11px; text-align: center;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
